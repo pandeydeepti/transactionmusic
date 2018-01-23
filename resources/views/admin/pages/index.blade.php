@@ -76,7 +76,9 @@
                                 @if($page->slug != 'policies-terms')
                                 <a href="{{url('/admin/pages/edit/'.$page->id)}}">{{$page->title }}</a>
                                 @endif
+                                @if($page->slug == 'policies-terms')
                                 <a>{{$page->title }}</a>
+                                @endif
                             </div>
                         </td>
                         <td>
